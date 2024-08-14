@@ -34,7 +34,6 @@
 
 ```
 .
-
 ├── CMakeLists.txt
 |
 ├── README.md
@@ -54,3 +53,6 @@
     └── my_shared_library.cpp
 
 ```
+
+### NOTE:
+Providing the absolute path in the code is not recomanded, since, every one compiling the code should adjust the path acording to his/her machine. However, there is a solution for that: using the ```configure_file``` in CMakeLists. To do so, we may create the C++ code with the in which the path to the library is defined as pre-compile derective. This variable will be set once the cmake is invocked and a new source file with be generated.  

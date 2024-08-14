@@ -9,6 +9,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_library(my_static_library STATIC src/my_static_library.cpp)
 target_include_directories(my_static_library PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
+set(SHARED_LIB_PATH ${CMAKE_BINARY_DIR})
+configure_file(main.cpp.in ${CMAKE_SOURCE_DIR}/main.cpp)
+
 add_library(my_shared_library SHARED src/my_shared_library.cpp)
 target_include_directories(my_shared_library PRIVATE ${CMAKE_SOURCE_DIR}/include)
 

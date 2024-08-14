@@ -1,4 +1,4 @@
-#define shared_lib_path "/root/cpp_ws/build/create_shared_library"
+#define shared_lib_path "@SHARED_LIB_PATH@"
 
 #include "my_static_library.hpp"
 
