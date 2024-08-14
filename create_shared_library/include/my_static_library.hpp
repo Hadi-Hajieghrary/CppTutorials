@@ -2,4 +2,4 @@
 #include <string>
 
 
-void print(const std::string& str);
+void staticPrint(const std::string& str);
