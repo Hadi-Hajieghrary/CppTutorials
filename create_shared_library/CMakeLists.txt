@@ -15,7 +15,6 @@ configure_file(main.cpp.in ${CMAKE_SOURCE_DIR}/main.cpp)
 add_library(my_shared_library SHARED src/my_shared_library.cpp)
 target_include_directories(my_shared_library PRIVATE ${CMAKE_SOURCE_DIR}/include)
 
-
 add_executable(main main.cpp)
 target_include_directories(main PRIVATE ${CMAKE_SOURCE_DIR}/include)
 target_link_directories(main PRIVATE ${CMAKE_SOURCE_DIR}/src)
